@@ -1,24 +1,51 @@
-html {
-    scroll-behavior: smooth;
-}
-
+/* Elimina márgenes y paddings por defecto del body */
 body {
+  margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
-  max-width: 700px;
-  margin: auto;
-  padding: 2rem;
-  line-height: 1.6;
 }
 
-h1, h2 {
-  color: #333;
+/* Estilo general del header */
+header {
+  display: flex;
+  justify-content: space-between; /* Para separar nombre y nav */
+  align-items: center;            /* Centrado vertical */
+  padding: 20px;
+  background-color: #222;
+  color: white;
 }
 
-a {
-  color: #007bff;
+/* Estilo para el bloque del nombre */
+#nombre h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+#nombre p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Estilo de la navbar */
+#nav-bar-antonio ul {
+  list-style: none;       /* Sin viñetas */
+  margin: 0;
+  padding: 0;
+  display: flex;          /* Aquí se alinean los <li> en una línea */
+  gap: 20px;              /* Espacio entre los elementos */
+}
+
+/* Estilo de los enlaces */
+#nav-bar-antonio a {
   text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-a:hover {
-  text-decoration: underline;
+#nav-bar-antonio a:hover {
+  color: #00bcd4; /* Color al pasar el mouse */
 }
+
+
